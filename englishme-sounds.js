@@ -40,6 +40,8 @@
                     reloadSounds();
                     drawBackgrounds();
                     $(sounds[soundIndex]).click();
+                    event.stopPropagation();
+                    event.preventDefault();
                 }
         }
     };
